@@ -13,16 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
-
 Auth::routes();
 
-Route::get('/home', [
-	'uses' => 'HomeController@index',
-	'as' => 'home']);
+Route::get('/', [
+	'uses' => 'RestaurantController@getHome',
+	'as' => 'getHome'	
+]);
 
 Route::get('/menu', [
 	'uses' => 'RestaurantController@getMenu',
 	'as' => 'getMenu']);
+
+Route::get('/about', [
+	'uses' => 'RestaurantController@getAbout',
+	'as' => 'getAbout']);
+
+Route::get('/reservation', [
+	'uses' => 'RestaurantController@getReservation',
+	'as' => 'getReservation']);
+
+Route::post('/reservation', [
+	'uses' => 'RestaurantController@postReservation',
+	'as' => 'postReservation']);
