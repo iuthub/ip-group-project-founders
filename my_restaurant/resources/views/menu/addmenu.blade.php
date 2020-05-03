@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <h1 >Menu:</h1>
+<a class="btn btn-dark "  href="/addmenu/create">New Food</a>
 @if(count($menus)>0)
 @foreach($menus as $menu)
 <div class="card card-body bg-light">
@@ -21,12 +22,11 @@
 		</div>
 	</div>
 </div>
-<!--This just buttons without functions this is how u should do-->
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">-</button>
-  <button type="button" class="btn btn-secondary">Number</button>
-  <button type="button" class="btn btn-secondary">+</button>
-</div>
+<a href="/addmenu/{{$menu->id}}/edit" class="btn btn-dark">Edit</a>
+{!! Form::open(['action'=>['MenusController@destroy', $menu->id], 'method'=>'POST','class'=>'float-right']) !!}
+{{Form::hidden('_method', 'Delete')}}
+{{Form::submit('Delete', ['class'=>'btn btn-dark'])}}
+{!! Form::close() !!}
 @endforeach
 {{$menus->links()}}
 @else
