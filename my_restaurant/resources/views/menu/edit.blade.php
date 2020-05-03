@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<h1>Shordan edit atjak bop gor qani:</h1>
-{!! Form::open(['action'=>['MenusController@update', $menu->id], 'method'=>'POST']) !!}
+<h1>Edit page</h1>
+{!! Form::open(['action'=>['MenusController@update', $menu->id], 'method'=>'POST', 'enctype'=>'multipart/form-data']) !!}
     	<div class="form-group">
     		{{Form::label('title', 'Title')}}
 			{{Form::text('title', $menu->title, ['class'=>'form-control', 'placeholder'=>'Title'])}}
@@ -10,7 +10,13 @@
     		{{Form::label('body', 'Body')}}
 			{{Form::textarea('body', $menu->body, ['class'=>'form-control', 'placeholder'=>'Body Text'])}}
     	</div> 
-		
+        <div class="form-group">
+            {{Form::label('cost', 'Cost')}}
+            {{Form::text('cost', $menu->cost, ['class'=>'form-control', 'placeholder'=>'Cost in $'])}}
+        </div>
+		<div class="form-group">
+            {{Form::file('cover_img')}}
+        </div>
 		{{Form::hidden('_method', 'PUT')}}
     	{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
 	{!! Form::close() !!}

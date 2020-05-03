@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMenusTable extends Migration
+class AddCoverToMenus extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
-        Schema::create('menus', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->mediumText('body');
-            $table->timestamps();
-            $table->string('cost');
+        Schema::table('menus', function (Blueprint $table) {
+            $table->string('cover_img');
         });
     }
 
@@ -29,6 +25,8 @@ class CreateMenusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menus');
+        Schema::table('menus', function (Blueprint $table) {
+            $table->dropColumn('cover_img');
+        });
     }
 }

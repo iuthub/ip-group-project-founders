@@ -48,10 +48,6 @@ Route::get('/addmenu/create', [
 	'uses' => 'MenusController@create',
 	'as' => 'createMenu']);
 
-Route::get('/addmenu/{id}', [
-	'uses' => 'MenusController@show',
-	'as' => 'showMenu']);
-
 Route::put('/addmenu/{id}', [
 	'uses' => 'MenusController@update',
 	'as' => 'updateMenu']);

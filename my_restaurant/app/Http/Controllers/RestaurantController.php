@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Menu;
 
 class RestaurantController extends Controller
 {
     public function getMenu()
     {
-        return view('menu');
+        $menus =  Menu::orderBy('created_at', 'desc')->paginate(10);
+         return view('menu')->with('menus', $menus);
     }
 
     public function getAbout()
