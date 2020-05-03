@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Reservation;
 use Illuminate\Support\Facades\Auth;
+use App\Menu;
 
 class RestaurantController extends Controller
 {
     public function getMenu()
     {
-        return view('pages.menu');
+        $menus =  Menu::orderBy('created_at', 'desc')->paginate(10);
+         return view('pages.menu')->with('menus', $menus);
     }
 
     public function getAbout()
@@ -84,5 +86,6 @@ class RestaurantController extends Controller
         ]);
 
     }
+
 }
 

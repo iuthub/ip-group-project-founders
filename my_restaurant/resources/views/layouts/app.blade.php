@@ -10,10 +10,13 @@
         </title>
 
     </head>
-     <body>
+     <body style="padding-top: 70px;">
         @include('inc.navbar')
+
         <div class="container">
+             @include('inc.messages')
              @yield('content')
         </div>
+        
      </body>
 </html>

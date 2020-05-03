@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">Restaurant</a>
+        <a class="navbar-brand" href="{{ route('getHome') }}">Restaurant</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -10,7 +10,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('getMenu') }}">Menu</a>
-                </li>  
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('getAddMenu') }}">Add Menu</a>
+                </li>   
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route((Auth::check() && Auth::user()->is_admin)?'getAdminReservation':'getReservation') }}">Reservation</a>
                 </li>  
