@@ -9,23 +9,31 @@
                     <a class="nav-link" href="{{ route('getHome') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('getMenu') }}">Menu</a>
-                </li> 
+                    <a class="nav-link" href="{{ route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMenu') }}">Menu</a>
+                </li>  
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('getAddMenu') }}">Add Menu</a>
-                </li>   
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('getReservation') }}">Reservation</a>
+                    <a class="nav-link" href="{{ route((Auth::check() && Auth::user()->is_admin)?'getAdminReservation':'getReservation') }}">Reservation</a>
                 </li>  
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('getAbout') }}">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Login</a>
-                </li> 
+
+                @if(!Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('register') }}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                    </li> 
+                @else
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <li class="nav-item"> 
+                             <input type="submit" value="Logout" class=""> 
+                        </li>
+                    </form>
+                @endif
             </ul>
         </div>  
     </nav>
+    
