@@ -35,3 +35,16 @@ Route::get('/reservation', [
 Route::post('/reservation', [
 	'uses' => 'RestaurantController@postReservation',
 	'as' => 'postReservation']);
+
+Route::group([
+	'prefix'=>'admin',
+	'middleware' => ['auth']
+], function(){
+		Route::get('reservation', [
+			'uses' => 'RestaurantController@getAdminReservation',
+			'as' => 'getAdminReservation']);
+
+		Route::get('delete/{id}', [
+			'uses' => 'RestaurantController@getDeleteReservation',
+			'as' => 'getDeleteReservation']);
+});

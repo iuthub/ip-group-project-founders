@@ -5,7 +5,8 @@
 	<li>
 		<ul>
 			<div class="food">
-				<div class="img"> <img src="{{ URL::to('public/kosh.jpg') }}" width="100px" height="100px" alt="tasty food"> </div>
+				<div class="img"> 
+					<img src="{{ url('public/images/kosh.jpg') }}" width="100px" height="100px" alt="tasty food"> </div>
 				<div class="name">Eatable food</div>
 				<div class="ingredients">You can look at the picture</div>
 				<div class="price">$100</div>
