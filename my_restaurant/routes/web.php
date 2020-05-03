@@ -37,5 +37,36 @@ Route::post('/reservation', [
 	'as' => 'postReservation']);
 
 Route::get('/addmenu', [
-	'uses' => 'RestaurantController@addMenu',
+	'uses' => 'MenusController@index',
 	'as' => 'getAddMenu']);
+
+Route::post('/addmenu', [
+	'uses' => 'MenusController@store',
+	'as' => 'storeMenu']);
+
+Route::get('/addmenu/create', [
+	'uses' => 'MenusController@create',
+	'as' => 'createMenu']);
+
+Route::get('/addmenu/{id}', [
+	'uses' => 'MenusController@show',
+	'as' => 'showMenu']);
+
+Route::put('/addmenu/{id}', [
+	'uses' => 'MenusController@update',
+	'as' => 'updateMenu']);
+
+Route::delete('/addmenu/{id}', [
+	'uses' => 'MenusController@destroy',
+	'as' => 'destroyMenu']);
+
+Route::get('/addmenu/{id}/edit', [
+	'uses' => 'MenusController@edit',
+	'as' => 'editMenu']);
+
+
+
+
+
+
+
