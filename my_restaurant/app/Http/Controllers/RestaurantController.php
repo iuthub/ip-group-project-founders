@@ -30,5 +30,9 @@ class RestaurantController extends Controller
     {
     	return view('pages.index');
     }
+    public function addMenu()
+    {
+        return view('pages.addmenu');
+    }
 }
 

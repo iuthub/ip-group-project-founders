@@ -35,3 +35,7 @@ Route::get('/reservation', [
 Route::post('/reservation', [
 	'uses' => 'RestaurantController@postReservation',
 	'as' => 'postReservation']);
+
+Route::get('/addmenu', [
+	'uses' => 'RestaurantController@addMenu',
+	'as' => 'getAddMenu']);

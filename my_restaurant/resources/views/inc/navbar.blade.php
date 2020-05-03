@@ -10,7 +10,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('getMenu') }}">Menu</a>
-                </li>  
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('getAddMenu') }}">Add Menu</a>
+                </li>   
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('getReservation') }}">Reservation</a>
                 </li>  
