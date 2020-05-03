@@ -9,11 +9,8 @@
                     <a class="nav-link" href="{{ route('getHome') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('getMenu') }}">Menu</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('getAddMenu') }}">Add Menu</a>
-                </li>   
+                    <a class="nav-link" href="{{ route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMenu') }}">Menu</a>
+                </li>  
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route((Auth::check() && Auth::user()->is_admin)?'getAdminReservation':'getReservation') }}">Reservation</a>
                 </li>  
