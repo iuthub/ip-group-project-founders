@@ -16,6 +16,9 @@
             {{Form::text('cost', '', ['class'=>'form-control', 'placeholder'=>'Cost in $'])}}
         </div>
         <div class="form-group">
+            {{Form::select('category', $categories, null, ['placeholder' => 'Choose the category'])}}
+        </div>
+        <div class="form-group">
             {{Form::file('cover_img')}}
         </div>
     	{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
