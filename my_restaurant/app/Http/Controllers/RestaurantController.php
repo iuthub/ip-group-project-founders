@@ -7,13 +7,16 @@ use Carbon\Carbon;
 use App\Reservation;
 use Illuminate\Support\Facades\Auth;
 use App\Menu;
+use App\Category;
 
 class RestaurantController extends Controller
 {
     public function getMenu()
-    {
-        $menus =  Menu::orderBy('created_at', 'desc')->paginate(10);
-         return view('pages.menu')->with('menus', $menus);
+    {   
+
+        $menus =  Menu::orderBy('created_at', 'desc')->get();
+        return view('pages.menu')->with('menus', $menus);
+
     }
 
     public function getAbout()

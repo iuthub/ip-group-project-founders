@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Menu;
+use App\Category;
 
 class MenusController extends Controller
 {
@@ -25,7 +26,8 @@ class MenusController extends Controller
     		'title'=>'required',
     		'body'=>'required',
             'cost'=>'required',
-            'cover_img'=>'image|nullable|max:1999'
+            'cover_img'=>'image|nullable|max:1999',
+            'category'=>'required',
     	]);
     	
         if ($request->hasFile('cover_img')){
@@ -37,10 +39,10 @@ class MenusController extends Controller
         }else{
             $fileNameToStore='noimage.jpg';
         }
-
-
-
-    	$menu = new Menu;
+        $category = new Category(['kind'=>$request->input('category')]);
+        $category->save();
+        $menu = new Menu;
+        $menu->category()->associate($category);
     	$menu->title = $request->input('title');
         $menu->cost = $request->input('cost');
     	$menu->body = $request->input('body');
@@ -74,6 +76,12 @@ class MenusController extends Controller
     	$menu->title = $request->input('title');
     	$menu->body = $request->input('body');
         $menu->cost = $request->input('cost');
+        $value = $menu->category_id;
+        $category = Category::find($value);
+        $category->kind = $request->input('category');
+        $category->save();
+
+
         if ($request->hasFile('cover_img')) {
             $menu->cover_img=$fileNameToStore;
         }
@@ -88,7 +96,10 @@ class MenusController extends Controller
         if ($menu->cover_img!='noimage.jpg') {
             Storage::delete('public/cover_imgs/'.$menu->cover_img);
         }
+        $id_of_category = $menu->category_id;
+        $category = Category::find($id_of_category);
 
+        $category->delete();
     	$menu->delete();
     	return redirect('/addmenu')->with('success', 'Successfully deleted!');
     }
