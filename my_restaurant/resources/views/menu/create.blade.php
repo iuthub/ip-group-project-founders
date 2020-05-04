@@ -16,7 +16,7 @@
             {{Form::text('cost', '', ['class'=>'form-control', 'placeholder'=>'Cost in $'])}}
         </div>
         <div class="form-group">
-            {{Form::select('category', ['Salad'=>'Salad','Main Dish' => 'Main Dish', 'Desert' => 'Desert', 'Beverage'=>'Beverage'], null, ['placeholder' => 'Choose the category'])}}
+            {{Form::select('category', $categories, null, ['placeholder' => 'Choose the category'])}}
         </div>
         <div class="form-group">
             {{Form::file('cover_img')}}

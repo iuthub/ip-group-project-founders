@@ -14,8 +14,8 @@ class RestaurantController extends Controller
     public function getMenu()
     {   
 
-        $menus =  Menu::orderBy('created_at', 'desc')->get();
-        return view('pages.menu')->with('menus', $menus);
+     //   $menus =  Menu::orderBy('created_at', 'desc')->get();
+        return view('pages.menu')->with('categories', Category::all());
 
     }
 

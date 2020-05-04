@@ -6,18 +6,28 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Menu;
 use App\Category;
+use Illuminate\Support\Facades\Auth;
 
 class MenusController extends Controller
 {
     public function index()
     {
-    	 $menus =  Menu::orderBy('created_at', 'desc')->paginate(10);
-    	 return view('menu.addmenu')->with('menus', $menus);
+        if (!$this->itsDefinitelyAdmin()) {
+            return redirect()->route('getHome')->with('error', 'You cannot access this page!');
+        }
+    	
+        return view('menu.addmenu')->with('categories', Category::all());
     }
 
     public function create()
     {	
-    	return view('menu.create');
+        if (!$this->itsDefinitelyAdmin()) {
+            return redirect()->route('getHome')->with('error', 'You cannot access this page!');
+        }
+
+    	return view('menu.create', [
+            'categories' => $this->getCategoriesAsArray()
+        ]);
     }
 
     public function store(Request $request)
@@ -36,17 +46,16 @@ class MenusController extends Controller
         $extension = $request->file('cover_img')->getClientOriginalExtension();
         $fileNameToStore = $filename.'_'.time().'.'.$extension;
         $path = $request->file('cover_img')->storeAs('public/cover_imgs', $fileNameToStore);
-        }else{
+        } else {
             $fileNameToStore='noimage.jpg';
         }
-        $category = new Category(['kind'=>$request->input('category')]);
-        $category->save();
+
         $menu = new Menu;
-        $menu->category()->associate($category);
     	$menu->title = $request->input('title');
         $menu->cost = $request->input('cost');
     	$menu->body = $request->input('body');
         $menu->cover_img=$fileNameToStore;
+        $menu->category_id = $request->input('category');
     	$menu->save();
 
     	return redirect('/addmenu')->with('success', 'New Food Added To Menu!');
@@ -54,17 +63,27 @@ class MenusController extends Controller
 
     public function edit($id)
     {
+        if (!$this->itsDefinitelyAdmin()) {
+            return redirect()->route('getHome')->with('error', 'You cannot access this page!');
+        }
+
     	$menu = Menu::find($id);
-    	return view("/menu.edit")->with('menu', $menu);
+    	return view("/menu.edit", [
+            'categories' => $this->getCategoriesAsArray(),
+            'menu' => $menu
+        ]);
     }
+
     public function update(Request $request, $id)
     {
     	$this->validate($request, [
     		'title'=>'required',
     		'body'=>'required',
             'cost'=>'required',
-            'cover_img'=>'image|nullable|max:1999'
+            'cover_img'=>'image|nullable|max:1999',
+            'category'=>'required',
     	]);
+
         if ($request->hasFile('cover_img')){
         $filenameWithExt = $request->file('cover_img')->getClientOriginalName();
         $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
@@ -72,15 +91,12 @@ class MenusController extends Controller
         $fileNameToStore = $filename.'_'.time().'.'.$extension;
         $path = $request->file('cover_img')->storeAs('public/cover_imgs', $fileNameToStore);
     	}
+
     	$menu = Menu::find($id);
     	$menu->title = $request->input('title');
     	$menu->body = $request->input('body');
         $menu->cost = $request->input('cost');
-        $value = $menu->category_id;
-        $category = Category::find($value);
-        $category->kind = $request->input('category');
-        $category->save();
-
+        $menu->category_id = $request->input('category');
 
         if ($request->hasFile('cover_img')) {
             $menu->cover_img=$fileNameToStore;
@@ -96,11 +112,24 @@ class MenusController extends Controller
         if ($menu->cover_img!='noimage.jpg') {
             Storage::delete('public/cover_imgs/'.$menu->cover_img);
         }
-        $id_of_category = $menu->category_id;
-        $category = Category::find($id_of_category);
-
-        $category->delete();
     	$menu->delete();
     	return redirect('/addmenu')->with('success', 'Successfully deleted!');
     }
+
+    private function getCategoriesAsArray()
+    {
+        $categories = Category::all();
+        $categoriesArr = [];
+        foreach ($categories as $category) {
+            $categoriesArr[$category->id] = $category->kind;
+        }
+
+        return $categoriesArr;
+    }
+
+    private function itsDefinitelyAdmin()
+    {
+        return Auth::check() && Auth::user()->is_admin;
+    }
+
 }

@@ -2,8 +2,10 @@
 @section('content')
 
 <h1 >Menu:</h1>
-@if(count($menus)>0)
-@foreach($menus as $menu)
+
+@foreach($categories as $category)
+<h2>{{ $category->kind }}</h2>
+@foreach($category->menus as $menu)
 <div class="card card-body bg-light">
 	<div class="row">
 		<div class="col-md-2 col-sm-2">
@@ -29,8 +31,5 @@
   <button type="button" class="btn btn-secondary">+</button>
 </div>
 @endforeach
-{{$menus->links()}}
-@else
-<p>No Menus So far</p>
-@endif
+@endforeach
 @endsection

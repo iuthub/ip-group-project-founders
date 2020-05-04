@@ -19,7 +19,7 @@ class CreateMenusTable extends Migration
             $table->mediumText('body');
             $table->timestamps();
             $table->string('cost');
-            $table->string('category_id');
+            $table->integer('category_id');
         });
     }
 
