@@ -49,7 +49,7 @@ class RestaurantController extends Controller
 
         $reservation->save();
 
-        if (!Auth::user()->is_admin) {
+        if (!$this->itsDefinitelyAdmin()) {
             return view('pages.index', [ 
                 'reservation' => $reservation
             ]);
@@ -62,7 +62,7 @@ class RestaurantController extends Controller
 
     public function getAdminReservation()
     {
-        if (!Auth::user()->is_admin) {
+        if (!$this->itsDefinitelyAdmin()) {
           return redirect()->back()->with([
             'error' => 'You cannot access this part!'
         ]);
@@ -75,7 +75,7 @@ class RestaurantController extends Controller
 
     public function getDeleteReservation($id)
     {
-        if (!Auth::user()->is_admin) {
+        if (!$this->itsDefinitelyAdmin()) {
           return redirect()->back()->with([
             'error' => 'You cannot access this part!'
         ]);
@@ -88,6 +88,11 @@ class RestaurantController extends Controller
             'info' => 'Task was deleted!'
         ]);
 
+    }
+
+    private function itsDefinitelyAdmin()
+    {
+        return Auth::check() && Auth::user()->is_admin;
     }
 
 }
