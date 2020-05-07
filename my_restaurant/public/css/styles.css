@@ -18,7 +18,7 @@ body{
 
 }
 
-img{
+.forker{
 	margin-top: -50px;
 }
 .yep{
@@ -88,6 +88,9 @@ background:rgba(28, 40, 51, 0.8);
 .yeah h1{
 	color: white;
 	text-align: center;
+}
+.about{
+	padding-top:40px;
 }
 
 
