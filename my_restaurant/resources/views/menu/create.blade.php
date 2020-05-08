@@ -4,7 +4,7 @@
 
 {!! Form::open(['action'=>'MenusController@store', 'method'=>'POST', 'enctype'=>'multipart/form-data']) !!}
     	<div class="form-group">
-    		{{Form::label('title', 'Title')}}
+    		{{Form::label('title', 'Name of the food')}}
 			{{Form::text('title', '', ['class'=>'form-control', 'placeholder'=>'Title'])}}
     	</div>
     	<div class="form-group">
@@ -18,7 +18,7 @@
         <div class="form-group">
             {{Form::select('category', $categories, null, ['placeholder' => 'Choose the category'])}}
         </div>
-        <div class="form-group">
+        <div class="form-group create">
             {{Form::file('cover_img')}}
         </div>
     	{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
