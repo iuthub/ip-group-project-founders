@@ -7,6 +7,7 @@
 *{
 	margin:0;
 	padding: 0;
+  font-family: 'Roboto', arial, sans-serif;
 }
 body{
  font-family: 'Roboto', sans-serif;
@@ -18,7 +19,7 @@ body{
 
 }
 
-img{
+.forker{
 	margin-top: -50px;
 }
 .yep{
@@ -89,13 +90,17 @@ background:rgba(28, 40, 51, 0.8);
 	color: white;
 	text-align: center;
 }
+.about{
+	padding-top:40px;
+}
+
+/*********Css Navbar*******/
+div .nav-item .log_out{
+	border: 0;
+	margin-right: 0;
+}
 
     	/*FOR INDEX PAGE*/
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', arial, sans-serif;
-}
 
 .body1 {
 	overflow-x: hidden;
@@ -445,21 +450,6 @@ footer ul li i:hover {
 	background-color: #ABB1BA;	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /*SuperPuperFont*/
 
   /*FOR MENU PAGE*/
@@ -521,13 +511,39 @@ footer ul li i:hover {
 	border: 2px solid teal;
 
 }
-.
 
-
-
-
-
-
-
-
-
+.navbar-brand{
+	margin-left: 8rem;
+	padding: 0;
+}
+.bg-dark,div .nav-item .log_out{
+	background-color: #000000!important;
+	opacity: 0.88;
+}
+.nav-link , .log_out{
+	font-size: 1.2rem !important;
+	margin-left:1.7em; 
+	margin-right:1.7rem;
+	color:white !important;
+	font-family: 'Lato', sans-serif !important;
+}
+.nav-link:hover , .log_out:hover{
+	color: gold !important;
+	transition-duration: 0.6s;
+}
+.logo{
+	 margin-top: 0;
+	height:60px;
+}
+div .nav-item .active{
+	color: gold!important;
+}
+div .nav-item .sign_up , .sign_in{
+	margin-left:3px;
+	margin-right:3px;
+	font-size: 17px!important;
+}
+div .nav-item .sign_up{
+	border: 2px solid gold;
+	border-radius: 20px;
+}
