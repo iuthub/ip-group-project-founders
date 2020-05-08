@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<div class="container">
 <h1 >Menu:</h1>
 <a class="btn btn-dark "  href="/addmenu/create">New Food</a>
 
@@ -31,4 +32,5 @@
 		{!! Form::close() !!}
 	@endforeach
 @endforeach
+</div>
 @endsection
