@@ -10,9 +10,10 @@
   font-family: 'Roboto', arial, sans-serif;
 }
 body{
+	overflow-x: hidden !important;
  font-family: 'Roboto', sans-serif;
  color:#777;
- background-color: #EAEDED;
+ background-color: white;
  width:100%;
  height: 100vh;
  background-size: cover;
@@ -60,14 +61,6 @@ letter-spacing: 2px;
 	font-family: 'Pacifico', cursive;
 	color:#F1C40F ;
 }
-.about .btn{
-	width:140px;
-	color:#145A32  !important;
-}
-.about .btn:hover{
-	color:#191919 !important;
-	background-color:#F1C40F ;
-}
 /*********Css for register and login page*******/
 .easy{
 	background: url("../images/6.jpg") no-repeat;
@@ -89,9 +82,6 @@ background:rgba(28, 40, 51, 0.8);
 .yeah h1{
 	color: white;
 	text-align: center;
-}
-.about{
-	padding-top:40px;
 }
 
 /*********Css Navbar*******/
@@ -546,4 +536,91 @@ div .nav-item .sign_up , .sign_in{
 div .nav-item .sign_up{
 	border: 2px solid gold;
 	border-radius: 20px;
+}
+/*About Page Montaj*/
+
+
+.back_image{
+	
+	background-image: url("../images/font3.png");
+	height: 700px;
+	background-size: cover;
+	margin-top: 0; 
+}
+.back_image2{
+	background-image: url("../images/fonmiddle2.png");
+	height: 850px;
+	background-size: cover;
+	margin-top: 0; 
+	background-color:#b1a0a0; 
+  background-blend-mode: multiply;
+}
+#para1{
+	font-family: 'Playfair Display', serif;
+	color: black;
+	font-size: 50px;
+
+}
+.jumbotron{
+	padding-right:0; 
+}
+.mainText{
+	margin-top: 50px;
+	text-shadow: -10px 30px 25px #151525;
+	margin-right: 0;
+	
+}
+.mainText2{
+	margin-left: 0;
+	margin-top: 150px;
+	margin-right: 0;
+	
+}
+
+#para2{
+	font-family: 'Playfair Display', serif;
+	color: #bf6c35;
+	font-size: 150px;
+
+}
+#para3{
+	font-family: 'Playfair Display', serif;
+
+	color: gold;
+	font-size: 90px;
+
+}
+div.about{
+	padding-top: 100px;
+	color: black;
+}
+
+.member-about, #bodyChange{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 18px;
+
+
+}
+div.custom_head{
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 20;
+	margin-top: 20px; 
+	margin-bottom:30px;
+
+}
+h3.para3{
+	font-family: 'Playfair Display', serif;
+	color: gold;
+	font-size: 40px;
+
+
+}
+h4.member-name{
+	font-family: 'Playfair Display', sans-serif;
+}
+div.fancy-background{
+	background-color: black;
+    padding: 80px 0;
+    opacity: 0.9;
 }
