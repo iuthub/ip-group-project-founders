@@ -2,110 +2,255 @@
 
 @section('content')
 
-	<main>
-	<section class="about" id="about">
-		<div class="container">
-			<div class="row align-items-lg-center">
-				<div class="col-12 col-md-6 text-center text-md-left">
-					<div class="section-heading mb-3">
-						<h1 class="display-4">Our Story</h1>
-					</div>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-				</div>
-				<div class="col-12 col-md-6">
-					<img class="img-fluid" src="{{ URL::to('images/res_about.jpg') }}" width="800">
-				</div>
-			</div>
-			
-		</div>
-	</section>
-</main>
-<section class="yep">
-<div class="container">
-<h1 class="display">Our Team</h1>
+<!--This is where magic happens! -->
+<div class="jumbotron  back_image">
+	<div class="container mainText">
+  		<div class="row">
+   			 <div class="col-sm text-right">
+   			 	<h1 id="para2">Déjà Vu</h1>
+   			 	<h1 id="para1">we have a lot to say</h1>
+   			</div>
+  </div>
 </div>
-</section>
-<section class="yes">
-	<div class="row">
-		<dir class="col-lg-4 col-md-6">
-			<div class="card">
-				<div class="card-body">
-					
-					<img  class="img-fluid rounded-circle w-50 mb-3 forker" src="{{ URL::to('images/cooker1.jpg') }}" >
-					<h4 class="fazlidd-TITLE">
-						Jack Daniels
-					</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-					<div class="d-flex flex-row justify-content-center">
-						<div class="p-4">
-							<a href="https://www.instagram.com">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-							
-							<a href="https://www.telegram.com">
-								<i class="fab fa-telegram fa-2x"></i>
-							</a>
-							
-							<a href="https://www.facebook.com">
-								<i class="fab fa-facebook fa-2x"></i>
-							</a>
-							</div>
-							</div>
-				</div>
-			</div>
-		</dir>
-		
-		
-		<dir class="col-lg-4 col-md-6">
-			<div class="card">
-				<div class="card-body">
-					
-					<img  class="img-fluid rounded-circle w-50 mb-3 forker" src="{{ URL::to('images/cooker2.jpg') }}"  >
-					<h4 class="fazlidd-TITLE">
-					Steve Jackson	
-					</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-					<div class="d-flex flex-row justify-content-center">
-						<div class="p-4">
-							<a href="https://www.instagram.com">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-							<a href="https://www.telegram.com">
-								<i class="fab fa-telegram fa-2x"></i>
-							</a>
-							<a href="https://www.facebook.com">
-								<i class="fab fa-facebook fa-2x"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</dir> 
-		<dir class="col-lg-4 col-md-6">
-			<div class="card">
-				<div class="card-body">
-			
-					<img class="img-fluid rounded-circle w-50 mb-3 forker" src="{{ URL::to('images/cooker3.jpg') }}"   >
-					<h4 class="fazlidd-TITLE">
-					Anna Robertson
-					</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-					<div class="d-flex flex-row justify-content-center">
-						<div class="p-4">
-							<a href="https://www.instagram.com">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-							<a href="https://www.telegram.com">
-								<i class="fab fa-telegram fa-2x"></i>
-							</a>
-							<a href="https://www.facebook.com">
-								<i class="fab fa-facebook fa-2x"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</dir>
-	</div>
-</section>
+</div>
+
+
+
+ <div class="about">
+            <div class="container">
+              
+                <div class="row">
+                 
+                    <div class="col-md-6 col-sm-6  text-center ">
+                        <div >
+                            <h3 id="para1">What We Do.</h3>
+                        </div>
+                        <div>
+                        	<img src="{{ URL::to('images/line.png') }}">
+                        </div>
+                    
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fugit praesentium maiores eos omnis. Provident magnam dolore, perspiciatis nesciunt quisquam illo, distinctio ullam accusamus id reiciendis. Doloremque dolore recusandae aut!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam possimus vitae dolores id voluptates nemo tempore porro veritatis ullam deleniti quia, omnis sequi eum officia expedita commodi, suscipit nostrum minima.</p>
+                    </div>
+                  
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor.png') }}"  />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="about">
+            <div class="container">
+               
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor2.png') }}">
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6  text-center ">
+                        <div>
+                            <h3 id="para1">How we do</h3>
+                        </div>
+                         <div>
+                        	<img src="{{ URL::to('images/line.png') }}">
+                        </div>
+                   
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="about">
+            <div class="container">
+                
+                <div class="row">
+                  
+                    <div class="col-md-6 col-sm-6 text-center">
+                        <div >
+                            <h3 id="para1">When We do</h3>
+                         
+
+                         
+                        </div>
+                         <div>
+                        	<img src="{{ URL::to('images/line.png') }}">
+                        </div>
+                  
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto sequi reprehenderit soluta earum suscipit inventore! Eligendi eaque voluptas, quibusdam quasi id architecto reiciendis quas accusantium quaerat nesciunt veniam. Ex.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex reiciendis ratione dolores laudantium inventore recusandae voluptatum, vitae hic quos optio eius ea alias aspernatur officia maxime repellat laborum expedita at.</p>
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor3.png') }}"  />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class="about">
+            <div class="container">
+                
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor4.png') }}">
+                    </div>
+          
+                    <div class="col-md-6 col-sm-6 centered text-center ">
+                        <div class="custom-heading">
+                            <h3 id="para1">Where we do</h3>
+                           
+
+                        
+  
+                        </div>
+                         <div>
+                        	<img src="{{ URL::to('images/line.png') }}">
+                        </div>
+
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis voluptatum aliquam dignissimos placeat quas est ducimus debitis quaerat culpa quos sint, laboriosam provident nostrum? Animi dolorem quam culpa ad aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dicta, enim, architecto excepturi aperiam quo vitae accusantium ea incidunt nostrum harum autem voluptas ullam optio in ut ratione consectetur maiores.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+	
+          
+          <div  class="jumbotron back_image2" style="padding-left:0px;margin-top: 100px; ">
+          	<div class="container mainText2 mx-auto">
+
+             <div class="row">
+   					 <div class="col-sm text-center">
+   					 	<div class="fancy-background">
+   			 				<h1 id="para3">Meet Our Creative And Professional Team</h1>
+   			 				</div>
+   			 			</div>
+   	
+  			</div>
+             </div>
+         </div>
+
+         <div class="about">
+            <div class="container">
+                
+                <div class="row">
+                   
+                    <div class="col-md-4 col-sm-4">
+                        <img src="{{ URL::to('images/staff2.png') }}">
+                    </div>
+          
+                    <div class="col-md-8 col-sm-8 text-center ">
+                        <div class="custom-heading" >
+                            <h3 id="para1">We are always ready!</h3>
+                           
+
+                        
+  
+                        </div>
+
+
+                       <figcaption>
+                                    <h4 class="staff-name">Kaith Lopez</h4>
+                                    <p>Head Chef </p>
+
+                                   
+
+                                    <p class="staff-about text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quam, perferendis nobis, reiciendis quaerat debitis! Quas aspernatur recusandae reprehenderit. Aut omnis vitae dolores dignissimos quasi sapiente odio! Repellendus, vel, quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ullam minus voluptas accusantium, ad, quisquam facilis odio quas, iure ratione amet? Ipsa ab accusantium blanditiis mollitia facilis illum exercitationem laborum!</p>
+                                </figcaption>   
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="about">
+            <div class="container">
+                
+                <div class="row">
+              
+          
+                    <div class="col-md-8 col-sm-8 text-center ">
+                        <div class="custom-heading" >
+                            <h3 id="para1">We are fast!</h3>
+                           
+
+                        
+  
+                        </div>
+
+
+
+                       <figcaption>
+                                    <h4 class="staff-name">Edward Smiths</h4>
+                                    <p >Sous Cheft</p>
+
+                                   
+
+                                    <p class="staff-about text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quam, perferendis nobis, reiciendis quaerat debitis! Quas aspernatur recusandae reprehenderit. Aut omnis vitae dolores dignissimos quasi sapiente odio! Repellendus, vel, quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ullam minus voluptas accusantium, ad, quisquam facilis odio quas, iure ratione amet? Ipsa ab accusantium blanditiis mollitia facilis illum exercitationem laborum!</p>
+                                </figcaption>   
+
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-4">
+                        <img src="{{ URL::to('images/staff3.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                
+                <div class="row">
+                   
+                    <div class="col-md-4 col-sm-4">
+                        <img src="{{ URL::to('images/staff4.png') }}">
+                    </div>
+          
+                    <div class="col-md-8 col-sm-8 text-center ">
+                        <div class="custom-heading" >
+                            <h3 id="para1">We make things yummy!</h3>
+                           
+
+                        
+  
+                        </div>
+
+
+                       <figcaption>
+                                    <h4 class="staff-name">Lola Rey</h4>
+                                    <p >Chef de Partie</p>
+
+                                    <p class="staff-about text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quam, perferendis nobis, reiciendis quaerat debitis! Quas aspernatur recusandae reprehenderit. Aut omnis vitae dolores dignissimos quasi sapiente odio! Repellendus, vel, quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ullam minus voluptas accusantium, ad, quisquam facilis odio quas, iure ratione amet? Ipsa ab accusantium blanditiis mollitia facilis illum exercitationem laborum!</p>
+                                </figcaption>   
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
 @endsection
