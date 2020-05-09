@@ -1,55 +1,69 @@
 @extends('layouts.app')
 @section('content')
-<div class="container" style="margin-top: 100px">
-	<form method="post" class="" action="{{ route('postReservation') }}">
-		@csrf
-		<div class="">
-			<div class="">
-				<input name="name" class="" type="text" placeholder="Your name" >
-			</div>
-			<div class="">
-				<input name="email" class="" type="email" placeholder="Your email" >
-			</div>
-			<div class="">
-				<input name="date" type="date" class="datepicker">
-			</div>
-			<div class="">
-				<select name="time" class="">
-					<option value="6:00pm">6:00 pm</option>
-					<option value="6:30pm">6:30 pm</option>
-					<option value="7:00pm">7:00 pm</option>
-					<option value="7:30pm">7:30 pm</option>
-					<option value="8:00pm">8:00 pm</option>
-					<option value="8:30pm">8:30 pm</option>
-					<option value="9:00pm">9:00 pm</option>
-					<option value="9:30pm">9:30 pm</option>
-					<option value="10:00pm">10:00 pm</option>
-					<option value="10:30pm" selected="selected">10:30 pm</option>
-				</select>
-			</div>
-			<div class="">
-				<select name="people_count" class="">
-					<option value="1">1 person</option>
-					<option value="2">2 people</option>
-					<option value="3">3 people</option>
-					<option value="4" selected="selected">4 people</option>
-					<option value="5">5 people</option>
-					<option value="6">6 people</option>
-					<option value="7">7 people</option>
-					<option value="8">8 people</option>
-					<option value="9">9 people</option>
-					<option value="10">10 people</option>
-					<option value="11">11 people</option>
-					<option value="12">12 people</option>
-					<option value="13">13 people</option>
-					<option value="14">14 people</option>
-					<option value="15">15 people</option>
-				</select>
-			</div>
-			<div class="">
-				<input type="submit" class="" value="Reserve">
-			</div>
-		</div>
-	</form>
+<section class="good" id="good">
+<div class="container excellent ">
+	<div class="container-time">
+		<h2 class="heading">Time Open</h2>
+		<hr>
+		<h3 class="heading-day">Monday-Friday</h3>
+		<p>6am-10am(Breakfast)</p>
+		<p>10am-10pm(Launch and Dinner)</p>
+
+		
+		<h3 class="heading-day">Saturday and Sunday</h3>
+		<p>9am-1am(Breakfast)</p>
+		<p>1am-9pm(Launch and Dinner)</p>
+		<hr>
+		
+	</div>
+	<div class="container-form">
+		<form method="post" class="" action="{{ route('postReservation') }}">
+			@csrf
+			 <h2 class="heading heading-yellow">Reservation</h2>
+			 <div class="form-field">
+			 	<p>Your Name</p>
+			 	<input type="text" name="name" placeholder="Your Name">
+			 </div>
+			 <div class="form-field">
+			 	<p>Your Email</p>
+			 	<input type="email" name="email"  placeholder="Your Email">
+			 </div>
+			 <div class="form-field">
+			 	<p>Date </p>
+			 	<input type="date" name="date" >
+			 </div>
+			 <div class="form-field">
+			 	<p>Time</p>
+			 	<input type="time" name="time" >
+			 </div>
+			 <div class="form-field">
+			 	<p>Number of People</p>
+			 	<select name="select">
+			 		<option value="1">1 person</option>
+			 		<option value="2">2 persons</option>
+			 		<option value="3">3 persons</option>
+			 		<option value="3">3 persons</option>
+			 		<option value="4">4 persons</option>
+			 		<option value="4">4 persons</option>
+			 		<option value="5">5 persons</option>
+			 		<option value="6">6 persons</option>
+			 		<option value="7">7 persons</option>
+			 		<option value="8">8 persons</option>
+			 		<option value="9">9 persons</option>
+			 		<option value="10">10 persons</option>
+			 		<option value="11">11 persons</option>
+			 		<option value="12">13 persons</option>
+			 		<option value="14">14 persons</option>
+			 		<option value="15">15 persons</option>
+
+			 	</select>
+			 </div>
+			 <button  type="submit" class="btn btn-success">Book Table</button>
+		</form>
+	</div>
 </div>
+</div>
+</section>
+
+
 @endsection
