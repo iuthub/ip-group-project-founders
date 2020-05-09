@@ -58,7 +58,7 @@ class MenusController extends Controller
         $menu->category_id = $request->input('category');
     	$menu->save();
 
-    	return redirect('/addmenu')->with('success', 'New Food Added To Menu!');
+    	return redirect()->route('getAddMenu')->with('success', 'New Food Added To Menu!');
     }
 
     public function edit($id)
@@ -103,7 +103,7 @@ class MenusController extends Controller
         }
     	$menu->save();
 
-    	return redirect('/addmenu')->with('success', 'Updated!');
+    	return redirect()->route('getAddMenu')->with('success', 'Updated!');
     }
 
     public function destroy($id)
@@ -113,7 +113,7 @@ class MenusController extends Controller
             Storage::delete('public/cover_imgs/'.$menu->cover_img);
         }
     	$menu->delete();
-    	return redirect('/addmenu')->with('success', 'Successfully deleted!');
+    	return redirect()->route('getAddMenu')->with('success', 'Successfully deleted!');
     }
 
     private function getCategoriesAsArray()

@@ -20,11 +20,10 @@
 					<p>{{$menu->body}}</p>
 				</div>
 				<hr>
-				<small>Last update: {{$menu->updated_at}}</small>
 			</div>
 			<div class="col-md-2 col-sm-2">>
 				<div  class="row cost">
-					<h2>{{$menu->cost}}$</h2>
+					<h2>{{$menu->cost}} $</h2>
 				</div>
 				<div class="btn-group row button1" role="group" aria-label="Basic example">
 					<button type="button" class="btn btn-secondary">-</button>

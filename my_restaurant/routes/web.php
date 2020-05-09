@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Auth::routes(['verify'=>true]);
 
 Route::get('/', [
 	'uses' => 'RestaurantController@getHome',
@@ -47,28 +47,28 @@ Route::group([
 		Route::get('delete/{id}', [
 			'uses' => 'RestaurantController@getDeleteReservation',
 			'as' => 'getDeleteReservation']);
+		
+		Route::get('/addmenu', [
+			'uses' => 'MenusController@index',
+			'as' => 'getAddMenu']);
+
+		Route::post('/addmenu', [
+			'uses' => 'MenusController@store',
+			'as' => 'storeMenu']);
+
+		Route::get('/addmenu/create', [
+			'uses' => 'MenusController@create',
+			'as' => 'createMenu']);
+
+		Route::put('/addmenu/{id}', [
+			'uses' => 'MenusController@update',
+			'as' => 'updateMenu']);
+
+		Route::delete('/addmenu/{id}', [
+			'uses' => 'MenusController@destroy',
+			'as' => 'destroyMenu']);
+
+		Route::get('/addmenu/{id}/edit', [
+			'uses' => 'MenusController@edit',
+			'as' => 'editMenu']);
 });
-
-Route::get('/addmenu', [
-	'uses' => 'MenusController@index',
-	'as' => 'getAddMenu']);
-
-Route::post('/addmenu', [
-	'uses' => 'MenusController@store',
-	'as' => 'storeMenu']);
-
-Route::get('/addmenu/create', [
-	'uses' => 'MenusController@create',
-	'as' => 'createMenu']);
-
-Route::put('/addmenu/{id}', [
-	'uses' => 'MenusController@update',
-	'as' => 'updateMenu']);
-
-Route::delete('/addmenu/{id}', [
-	'uses' => 'MenusController@destroy',
-	'as' => 'destroyMenu']);
-
-Route::get('/addmenu/{id}/edit', [
-	'uses' => 'MenusController@edit',
-	'as' => 'editMenu']);

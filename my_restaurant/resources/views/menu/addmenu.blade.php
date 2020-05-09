@@ -1,35 +1,39 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="container">
-<h1 >Menu:</h1>
-<a class="btn btn-dark "  href="/addmenu/create">New Food</a>
+	<a class="btn btn-success btn-menu-add"  href="{{ route('createMenu') }}">New Food</a>
 
 @foreach($categories as $category)
-<h2>{{ $category->kind }}</h2>
+@php $counter = 0 @endphp
+<h2 class="category-title-menu">{{ $category->kind }}</h2>
 	@foreach($category->menus as $menu)
-		<div class="card card-body bg-light">
-			<div class="row">
-				<div class="col-md-2 col-sm-2">
-					<img style="width:100%"  src="/storage/cover_imgs/{{$menu->cover_img}}">
+		@php $counter++ @endphp
+		@if($counter % 3 == 1)
+		<div class="row">
+		@endif
+
+		<div class="col-lg-4 col-md-6 col-sm-12 menu-item">
+			<div class="card bg-light" style="height: 600px">
+				<img style="width:100%; height: 250px"  src="/storage/cover_imgs/{{$menu->cover_img}}">
+				<div class="card-body">
+					<h3 class="card-title menu-item-title">{{$menu->title}}</h3>
+					<p class="card-text">{{$menu->body}}</p>
+					<h5>{{$menu->cost}} $</h5>
 				</div>
-				<div class="col-md-8 col-sm-8">
-					<h3>{{$menu->title}}</h3>
-					<div>
-						<p>{{$menu->body}}</p>
-					</div>
-					<hr>
-					<small>Last update: {{$menu->updated_at}}</small>
-				</div>
-				<div  class="col-md-2 col-sm-2">
-					<h2>{{$menu->cost}}$</h2>
+				<hr>
+				<div class="btn-group" role="group">
+					<a href="{{ route('editMenu', ['id'=> $menu->id]) }}" style="padding-top: 13px;padding-bottom: 13px" class="btn btn-dark">Edit</a>
+					{!! Form::open(['action'=>['MenusController@destroy', $menu->id], 'method'=>'POST','class'=>'btn btn-dark', 'style'=>'padding:0']) !!}
+					{{Form::hidden('_method', 'Delete')}}
+					{{Form::submit('Delete', ['class'=>'btn btn-dark btn-menu-delete'])}}
+					{!! Form::close() !!}
 				</div>
 			</div>
 		</div>
-		<a href="/addmenu/{{$menu->id}}/edit" class="btn btn-dark">Edit</a>
-		{!! Form::open(['action'=>['MenusController@destroy', $menu->id], 'method'=>'POST','class'=>'float-right']) !!}
-		{{Form::hidden('_method', 'Delete')}}
-		{{Form::submit('Delete', ['class'=>'btn btn-dark'])}}
-		{!! Form::close() !!}
+		@if($counter % 3 == 0 || count($category->menus) == $counter)
+		</div>
+		@endif
 	@endforeach
 @endforeach
 </div>
