@@ -2,110 +2,226 @@
 
 @section('content')
 
-	<main>
-	<section class="about" id="about">
-		<div class="container">
-			<div class="row align-items-lg-center">
-				<div class="col-12 col-md-6 text-center text-md-left">
-					<div class="section-heading mb-3">
-						<h1 class="display-4">Our Story</h1>
-					</div>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-				</div>
-				<div class="col-12 col-md-6">
-					<img class="img-fluid" src="{{ URL::to('images/res_about.jpg') }}" width="800">
-				</div>
-			</div>
-			
-		</div>
-	</section>
-</main>
-<section class="yep">
-<div class="container">
-<h1 class="display">Our Team</h1>
+<!--This is where magic happens! -->
+<div class="jumbotron dark back_image">
+	<div class="container mainText">
+  		<div class="row">
+   			 <div class="col-sm text-right">
+   			 	<h1 id="para2">Déjà Vu</h1>
+   			 	<h1 id="para1">we have a lot to say</h1>
+   			</div>
+  </div>
 </div>
-</section>
-<section class="yes">
-	<div class="row">
-		<dir class="col-lg-4 col-md-6">
-			<div class="card">
-				<div class="card-body">
-					
-					<img  class="img-fluid rounded-circle w-50 mb-3 forker" src="{{ URL::to('images/cooker1.jpg') }}" >
-					<h4 class="fazlidd-TITLE">
-						Jack Daniels
-					</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-					<div class="d-flex flex-row justify-content-center">
-						<div class="p-4">
-							<a href="https://www.instagram.com">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-							
-							<a href="https://www.telegram.com">
-								<i class="fab fa-telegram fa-2x"></i>
-							</a>
-							
-							<a href="https://www.facebook.com">
-								<i class="fab fa-facebook fa-2x"></i>
-							</a>
-							</div>
-							</div>
-				</div>
-			</div>
-		</dir>
-		
-		
-		<dir class="col-lg-4 col-md-6">
-			<div class="card">
-				<div class="card-body">
-					
-					<img  class="img-fluid rounded-circle w-50 mb-3 forker" src="{{ URL::to('images/cooker2.jpg') }}"  >
-					<h4 class="fazlidd-TITLE">
-					Steve Jackson	
-					</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-					<div class="d-flex flex-row justify-content-center">
-						<div class="p-4">
-							<a href="https://www.instagram.com">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-							<a href="https://www.telegram.com">
-								<i class="fab fa-telegram fa-2x"></i>
-							</a>
-							<a href="https://www.facebook.com">
-								<i class="fab fa-facebook fa-2x"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</dir> 
-		<dir class="col-lg-4 col-md-6">
-			<div class="card">
-				<div class="card-body">
-			
-					<img class="img-fluid rounded-circle w-50 mb-3 forker" src="{{ URL::to('images/cooker3.jpg') }}"   >
-					<h4 class="fazlidd-TITLE">
-					Anna Robertson
-					</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-					<div class="d-flex flex-row justify-content-center">
-						<div class="p-4">
-							<a href="https://www.instagram.com">
-								<i class="fab fa-instagram fa-2x"></i>
-							</a>
-							<a href="https://www.telegram.com">
-								<i class="fab fa-telegram fa-2x"></i>
-							</a>
-							<a href="https://www.facebook.com">
-								<i class="fab fa-facebook fa-2x"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</dir>
-	</div>
-</section>
+</div>
+
+
+
+ <div class="about">
+            <div class="container">
+                <!-- .row start -->
+                <div class="row">
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6  text-center ">
+                        <div class="custom-heading">
+                            <h3 id="para1">What We Do.</h3>
+                            
+                        </div><!-- .custom-heading.style-1 end -->
+                    
+                        <p id="bodyChange">Enjoy your dining at Royal plate terrace, surrounded by natural wooden fence and plenty of green.
+                            Royal plate terrace offers 72 seating places which can be rearranged for large groups and special
+                            events like weddings, corporate parties or baby showers. Royal view of the Palma bay in the sunset
+                            will take your breath away and make your stay truly royal. You can also visit our terrace bar where
+                            our professional staff will offer you our best vines or cocktails, according to your wishes.</p>
+                    </div><!-- .col-md-6 end -->
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor.png') }}" alt="Royal Plate - Restaurant & Catering HTML Template" />
+                    </div><!-- .col-md-6 end -->
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </div><!-- .page-content end -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="about">
+            <div class="container">
+                <!-- .row start -->
+                <div class="row">
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor2.png') }}">
+                    </div><!-- .col-md-6 end -->
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6  text-center ">
+                        <div class="custom-heading">
+                            <h3 id="para1">How we do</h3>
+                   
+
+                        <p id="bodyChange">Welcome. This is Royal plate. Elegant & sofisticated restaurant template. Royal plate offers different home page layouts with smart and unique design, showcasing beautifully designed elements every restaurant website should have. Smooth animations, fast loading and engaging user 
+                            experience are just some of the features this template offers. 
+                            So, give it a try and dive into a world of royal restaurant websites.</p>
+
+                    </div><!-- .col-md-6 end -->
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </div><!-- .page-content end -->
+
+
+<div class="about">
+            <div class="container">
+                <!-- .row start -->
+                <div class="row">
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6 text-center">
+                        <div class="custom-heading">
+                            <h3 id="para1">When We do</h3>
+                         
+
+                         
+                        </div><!-- .custom-heading.style-1 end -->
+                  
+
+                        <p id="bodyChange">Enjoy your dining at Royal plate terrace, surrounded by natural wooden fence and plenty of green.
+                            Royal plate terrace offers 72 seating places which can be rearranged for large groups and special
+                            events like weddings, corporate parties or baby showers. Royal view of the Palma bay in the sunset
+                            will take your breath away and make your stay truly royal. You can also visit our terrace bar where
+                            our professional staff will offer you our best vines or cocktails, according to your wishes.</p>
+                    </div><!-- .col-md-6 end -->
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor3.png') }}" alt="Royal Plate - Restaurant & Catering HTML Template" />
+                    </div><!-- .col-md-6 end -->
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </div><!-- .page-content end -->
+
+
+<div class="about">
+            <div class="container">
+                <!-- .row start -->
+                <div class="row">
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/fonFor4.png') }}">
+                    </div><!-- .col-md-6 end -->
+                    <!-- .col-md-6 start -->
+                    <div class="col-md-6 col-sm-6 centered text-center ">
+                        <div class="custom-heading">
+                            <h3 id="para1">Where we do</h3>
+                           
+
+                            <!-- .divider.style-1 start -->
+  
+                        </div><!-- .custom-heading.style-1 end -->
+
+
+                        <p id="bodyChange">Welcome. This is Royal plate. Elegant & sofisticated restaurant template. Royal plate offers different home page layouts with smart and unique design, showcasing beautifully designed elements every restaurant website should have. Smooth animations, fast loading and engaging user 
+                            experience are just some of the features this template offers. 
+                            So, give it a try and dive into a world of royal restaurant websites.</p>
+
+                    </div><!-- .col-md-6 end -->
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </div><!-- .page-content end -->
+
+
+	
+            <!-- .container start -->
+          
+
+                <div class="row" style="padding-top: 30px">
+                	<div class="col text-center custom_head">
+                        <div class="custom_head">
+                            <h3 class="para3">Our Professional And Friendly Team </h3>
+                        </div>
+
+                </div>
+
+
+            </div>
+        
+            <div class="container" style="padding-top: 30px">
+                <!-- .row start -->
+            
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="team-member">                                
+                            <figure>
+                                <img src="{{ URL::to('images/popo.png') }}" alt="Royal Plate - Restaurant & Catering HTML Template"/>
+
+                                <figcaption>
+                                    <h4 class="member-name">Keith Simons</h4>
+                                    <p class="member-position">Chef de cousine</p>
+
+                                    <!-- .divider start -->
+                                    <div class="divider">
+                                        <span class="hr-simple"></span>
+                                    </div>
+
+                                    <p class="member-about text-center">Meet Keith Simmons, chef de cousine in our restaurant.
+                                        Keith has 10 years of experience in restaurant business. His favorite food is beaf steak.</p>
+                                </figcaption>   
+                            </figure>
+                        </div><!-- .team-member end -->
+
+                    </div><!-- .col-md-4 end -->
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="team-member">                               
+                            <figure>
+                                <img src="{{ URL::to('images/popo.png') }}" alt="Royal Plate - Restaurant & Catering HTML Template"/>
+
+                                <figcaption>
+                                    <h4 class="member-name">Ashley Cooper</h4>
+                                    <p class="member-position">Head waiter</p>
+
+                                    <!-- .divider start -->
+                                    <div class="divider">
+                                        <span class="hr-simple"></span>
+                                    </div>
+
+                                    <p class="member-about text-center">Ashley Cooper is head waiter in Royal Plate and an experienced vine taster.
+                                        Her favorite vine is Chardonnay.</p>
+                                </figcaption>   
+                            </figure>
+                        </div><!-- .team-member end -->
+                    </div><!-- .col-md-4 end -->
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="team-member">                              
+                            <figure>
+                                <img src="{{ URL::to('images/popo.png') }}" alt="Royal Plate - Restaurant & Catering HTML Template"/>
+
+                                <figcaption>
+                                    <h4 class="member-name">Philip Salazar</h4>
+                                    <p class="member-position">Deserts expert</p>
+
+                                    <!-- .divider start -->
+                                    <div class="divider">
+                                        <span class="hr-simple"></span>
+                                    </div>
+
+                                    <p class="member-about text-center">Philip Salazar is our expert for deserts. Philip has 12 years of experience
+                                        and enjoy in creating new deserts. Favorite food: Sacher cake</p>
+                                </figcaption>    
+                            </figure>
+                        </div><!-- .team-member end -->
+                    </div><!-- .col-md-4 end -->
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </div><!-- .page-content end -->
+
+
+
+
+
 @endsection
