@@ -3,8 +3,8 @@
 @section('content')
 <div class="container-fluid easy">
     <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12"></div>
-        <dir class="col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-2"></div>
+        <dir class="col-lg-4 col-md-6 col-sm-8 col-xs-8">
             <form class="yeah" method="POST" action="{{ route('register') }}">
                  @csrf
                 <h1>Register</h1>
@@ -40,7 +40,7 @@
                 <button type="submit" class="btn btn-success">Register</button>
             </form>
         </dir>
-        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-2"></div>
     </div>
 </div>
 
