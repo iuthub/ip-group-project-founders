@@ -23,6 +23,8 @@
         <!--   To make the navbar responsive -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src=" {{ URL::to('js/main.js') }}"></script>
         <link href="{{ URL::to('css/styles.css') }}" rel="stylesheet">
         <link rel="icon" href="{{ URL::to('images/favicon.png') }}" sizes="5x5">
         <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">

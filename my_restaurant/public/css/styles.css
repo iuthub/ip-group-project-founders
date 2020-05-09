@@ -456,9 +456,7 @@ footer ul li i:hover {
 	border-radius: 20%;
 }
 
-.btn-group button{
-	margin-left: 45px;
-}
+
 .cost{
 	background-color: teal;
 	margin-left: 45px;
@@ -640,6 +638,7 @@ div.fancy-background{
 	padding-top: 50px;
 	padding-bottom: 20px;
 	color: #bd8c55;
+	font-weight: bold;
 }
 
 .btn-menu-add {
