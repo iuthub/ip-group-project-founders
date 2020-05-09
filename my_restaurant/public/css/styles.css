@@ -10,6 +10,7 @@
   font-family: 'Roboto', arial, sans-serif;
 }
 body{
+	overflow-x: hidden !important;
  font-family: 'Roboto', sans-serif;
  color:#777;
  background-color: white;
@@ -542,7 +543,7 @@ div .nav-item .sign_up{
 .back_image{
 	
 	background-image: url("../images/font3.png");
-	height: 650px;
+	height: 700px;
 	background-size: cover;
 	margin-top: 0; 
 }
