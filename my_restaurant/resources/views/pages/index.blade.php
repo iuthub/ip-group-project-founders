@@ -102,12 +102,12 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           <div class="row">
             
             <div class="col-md-9 col-sm-9  text-right ">
-              <h3 class="name1" >Courgetti</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great. </p>
+              <h3 class="name1" >Quick Chicken Piccata</h3>
+              <p >Quick chicken recipes make dinner a breeze. Laced with lemon and simmered in white wine, this stovetop entree is super easy and elegant. Almost any side—noodles, veggies or bread—tastes better next to this lovely chicken. </p>
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/image5.jpg') }}"  />
+              <img src="{{ URL::to('images/a1.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -118,13 +118,13 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/beet.jpg') }}"  />
+              <img src="{{ URL::to('images/a2.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
               
-              <h3 class="name1">Spring tabbouleh</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great.</p>
+              <h3 class="name1">Pan-Roasted Chicken and Vegetables</h3>
+              <p >This one-dish roast chicken with vegetables tastes as if it took hours of hands-on time to put together, but the simple ingredients can be prepped in mere minutes. The rosemary gives it a rich flavor, and the meat juices cook the veggies to perfection.</p>
               
             </div>
             
@@ -154,12 +154,12 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           <div class="row">
             
             <div class="col-md-9 col-sm-9  text-right ">
-              <h3 class="name1" >Courgetti</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great. </p>
+              <h3 class="name1" >Flavorful Pot Roast</h3>
+              <p >On hectic days, this is so quick and easy to prep! Convenient packages of dressing and gravy combine to create a sauce worthy of a fall-apart roast. For a filling meal-in-one, serve with mashed potatoes and ladle the juices over top. </p>
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food3.jpg') }}"  />
+              <img src="{{ URL::to('images/a3.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -170,118 +170,13 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food4.jpg') }}"  />
+              <img src="{{ URL::to('images/a4.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
               
-              <h3 class="name1">Spring tabbouleh</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great.</p>
-              
-            </div>
-            
-            
-          </div>
-        </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-<div >
-  <div class="container">
-    
-    <div class="row">
-      
-      <div class="col-md-6 col-sm-6  ">
-        <div class="container">
-          
-          <div class="row">
-            
-            <div class="col-md-9 col-sm-9  text-right ">
-              <h3 class="name1" >Courgetti</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great. </p>
-            </div>
-            
-            <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food6.jpg') }}"  />
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-md-6 col-sm-6 ">
-        <div class="container">
-          
-          <div class="row">
-            <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food7.jpg') }}"  />
-            </div>
-            
-            <div class="col-md-9 col-sm-9 text-left   ">
-              
-              <h3 class="name1">Spring tabbouleh</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great.</p>
-              
-            </div>
-            
-            
-          </div>
-        </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<div >
-  <div class="container">
-    
-    <div class="row">
-      
-      <div class="col-md-6 col-sm-6  ">
-        <div class="container">
-          
-          <div class="row">
-            
-            <div class="col-md-9 col-sm-9  text-right ">
-              <h3 class="name1" >Courgetti</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great. </p>
-            </div>
-            
-            <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food8.jpg') }}"  />
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-md-6 col-sm-6 ">
-        <div class="container">
-          
-          <div class="row">
-            <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food9.jpg') }}"  />
-            </div>
-            
-            <div class="col-md-9 col-sm-9 text-left   ">
-              
-              <h3 class="name1">Spring tabbouleh</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great.</p>
+              <h3 class="name1">Roasted Chicken with Rosemary</h3>
+              <p >Roasting chickens this way is simple but gives you that rich roast flavor. The rosemary gives it a sweet taste and blends well with the garlic, butter and parsley.</p>
               
             </div>
             
@@ -312,12 +207,12 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           <div class="row">
             
             <div class="col-md-9 col-sm-9  text-right ">
-              <h3 class="name1" >Courgetti</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great. </p>
+              <h3 class="name1" >Shrimp Monterey</h3>
+              <p >For a special occasion or when company's coming, this delicious seafood dish makes a lasting impression. You'll be surprised at how fast you can prepare it. A mild, fresh-tasting sauce and the Monterey Jack cheese nicely complement the shrimp </p>
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food10.jpg') }}"  />
+              <img src="{{ URL::to('images/a5.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -328,13 +223,119 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/food11.jpg') }}"  />
+              <img src="{{ URL::to('images/a6.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
               
-              <h3 class="name1">Spring tabbouleh</h3>
-              <p >Slow-grilling over indirect heat keeps this chicken moist and tender. Giving the drumsticks a long rub with seasonings makes them taste great.</p>
+              <h3 class="name1">Taco Salad Casserole</h3>
+              <p >This taco casserole recipe tastes like a taco salad and is a breeze to assemble. I crush tortilla chips to form a bottom layer, then spread on refried beans, a spicy meat mixture and cheese.</p>
+              
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div >
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="col-md-6 col-sm-6  ">
+        <div class="container">
+          
+          <div class="row">
+            
+            <div class="col-md-9 col-sm-9  text-right ">
+              <h3 class="name1" >Brown Sugar-Glazed Salmon</h3>
+              <p >Pop these protein-packed salmon fillets in the oven before whipping up a sweet basting sauce. This tangy entree cooks up in minutes making it a perfect meal for busy families and unexpected weekend guests. </p>
+            </div>
+            
+            <div class="col-md-3 col-sm-3 imagaskil">
+              <img src="{{ URL::to('images/a7.jpg') }}"  />
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-6 col-sm-6 ">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-md-3 col-sm-3 imagaskil">
+              <img src="{{ URL::to('images/a8.jpg') }}"  />
+            </div>
+            
+            <div class="col-md-9 col-sm-9 text-left   ">
+              
+              <h3 class="name1">Melt-in-Your-Mouth Chuck Roast</h3>
+              <p >1 can (14-1/2 ounces) Italian stewed tomatoes, undrained 1/2 cup beef broth 1/2 cup ketchup 3 tablespoons brown sugar 2 tablespoons Worcestershire sauce 4 teaspoons prepared mustard 3 garlic cloves, minced 1 tablespoon soy sauce
+</p>
+              
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div >
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="col-md-6 col-sm-6  ">
+        <div class="container">
+          
+          <div class="row">
+            
+            <div class="col-md-9 col-sm-9  text-right ">
+              <h3 class="name1" >Basil Pork Chops</h3>
+              <p >Just a few ingredients give a tender pork loin chop all the glazed goodness it needs. Serve with your favorite roasted veggies and you’ve got a meal bursting with flavor </p>
+            </div>
+            
+            <div class="col-md-3 col-sm-3 imagaskil">
+              <img src="{{ URL::to('images/a9.jpg') }}"  />
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-6 col-sm-6 ">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-md-3 col-sm-3 imagaskil">
+              <img src="{{ URL::to('images/a10.jpg') }}"  />
+            </div>
+            
+            <div class="col-md-9 col-sm-9 text-left   ">
+              
+              <h3 class="name1">Shrimp Tortellini Pasta Toss</h3>
+              <p >No matter how you toss 'em up, shrimp and thyme play nicely with any spring-fresh vegetable.</p>
               
             </div>
             
@@ -377,10 +378,10 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
                          <div>
                           <img src="{{ URL::to('images/line4.png') }}">
                         </div>
-                        <h3 class="name1">Spring tabbouleh</h3>
+                        <h3 class="name1">Chicken for Two</h3>
                    
 
-                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                        <p id="bodyChange"> Her chicken (which is still the restaurant’s top seller) starts with a dry brine before being dried, seasoned and cooked in a very hot oven. It’s served over a warm salad of arugula and chunks of bread, and there’s still no other dish quite like it.</p>
                         <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
 
                     </div>
@@ -403,10 +404,10 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
                          <div>
                           <img src="{{ URL::to('images/line4.png') }}">
                         </div>
-                        <h3 class="name1">Spring tabbouleh</h3>
+                        <h3 class="name1">Black Label </h3>
                    
 
-                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                        <p id="bodyChange"> Prime dry-aged beef, carefully sourced and aged for six to seven weeks, is well seasoned and given an enviable sear on a griddle before being nestled onto a sesame-studded brioche bun, topped with caramelized onions and served with pommes frites.</p>
                         <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
 
                     </div>
@@ -429,10 +430,10 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
                          <div>
                           <img src="{{ URL::to('images/line4.png') }}">
                         </div>
-                        <h3 class="name1">Spring tabbouleh</h3>
+                        <h3 class="name1">Blackened Redfish</h3>
                    
 
-                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                        <p id="bodyChange">he dish starts with a blend of spices including cayenne, paprika, garlic and onion powders, thyme and oregano, applied liberally to the Gulf fish before it’s seared with a little clarified butter in a ripping-hot cast-iron pan. </p>
                        <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
 
                     </div>
@@ -455,10 +456,10 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
                          <div>
                           <img src="{{ URL::to('images/line4.png') }}">
                         </div>
-                        <h3 class="name1">Spring tabbouleh</h3>
+                        <h3 class="name1">Dick’s Deluxe</h3>
                    
 
-                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                        <p id="bodyChange">To make the dish, heavy cream is lightly whipped with cayenne, salt and a touch of vodka and fresh lemon juice, and the mixture is added into a piping bag. Egg, salt, cayenne, cream and butter are whisked into a very soft scramble, and this mixture is spooned into the bottom of an eggshell.</p>
                        <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
 
                     </div>
