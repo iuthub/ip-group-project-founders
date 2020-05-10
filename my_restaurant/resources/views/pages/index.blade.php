@@ -159,7 +159,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/image5.jpg') }}"  />
+              <img src="{{ URL::to('images/food3.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/beet.jpg') }}"  />
+              <img src="{{ URL::to('images/food4.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
@@ -212,7 +212,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/image5.jpg') }}"  />
+              <img src="{{ URL::to('images/food6.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -223,7 +223,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/beet.jpg') }}"  />
+              <img src="{{ URL::to('images/food7.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
@@ -264,7 +264,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/image5.jpg') }}"  />
+              <img src="{{ URL::to('images/food8.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -275,7 +275,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/beet.jpg') }}"  />
+              <img src="{{ URL::to('images/food9.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
@@ -317,7 +317,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
             </div>
             
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/image5.jpg') }}"  />
+              <img src="{{ URL::to('images/food10.jpg') }}"  />
             </div>
           </div>
         </div>
@@ -328,7 +328,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
           
           <div class="row">
             <div class="col-md-3 col-sm-3 imagaskil">
-              <img src="{{ URL::to('images/beet.jpg') }}"  />
+              <img src="{{ URL::to('images/food11.jpg') }}"  />
             </div>
             
             <div class="col-md-9 col-sm-9 text-left   ">
@@ -349,6 +349,133 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+<div id="carouselExampleControls" class="carousel slide " style="margin-top: 100px;"  data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+               
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/enjoy uto.png') }}">
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6  text-left ">
+                        <div>
+                            <h3 id="para1">Foods on discounts.</h3>
+                        </div>
+                         <div>
+                          <img src="{{ URL::to('images/line4.png') }}">
+                        </div>
+                        <h3 class="name1">Spring tabbouleh</h3>
+                   
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                        <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+               
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/food4car3.png') }}">
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6  text-left ">
+                        <div>
+                            <h3 id="para1">Foods on discounts.</h3>
+                        </div>
+                         <div>
+                          <img src="{{ URL::to('images/line4.png') }}">
+                        </div>
+                        <h3 class="name1">Spring tabbouleh</h3>
+                   
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                        <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+               
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/carphoto.png') }}">
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6  text-left ">
+                        <div>
+                            <h3 id="para1">Foods on discounts.</h3>
+                        </div>
+                         <div>
+                          <img src="{{ URL::to('images/line4.png') }}">
+                        </div>
+                        <h3 class="name1">Spring tabbouleh</h3>
+                   
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                       <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+     <div class="carousel-item">
+      <div class="container">
+               
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6">
+                        <img src="{{ URL::to('images/foodlal.png') }}">
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6  text-left ">
+                        <div>
+                            <h3 id="para1">Foods on discounts.</h3>
+                        </div>
+                         <div>
+                          <img src="{{ URL::to('images/line4.png') }}">
+                        </div>
+                        <h3 class="name1">Spring tabbouleh</h3>
+                   
+
+                        <p id="bodyChange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea, dolorem consequatur distinctio at hic? Consectetur maiores error ad! Deserunt sit praesentium animi quo reprehenderit! Libero in rerum ullam consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio iste quasi expedita. Fuga est similique voluptatem, voluptas ex, labore veritatis, repudiandae eius molestiae, quas sint minima non. Hic, unde.</p>
+                       <a href="{{ route('register') }}" class="btn btn-secondary" role="button"><span>Be Member</span></a>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 
 

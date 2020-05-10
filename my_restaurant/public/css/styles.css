@@ -422,3 +422,10 @@ div.carusel3{
     color: black;
 
 }
+.backImage{
+	background-image: url("../images/finalPic.png");
+	height: 850px;
+	background-size: cover;
+	margin-top: 0; 
+	
+}
