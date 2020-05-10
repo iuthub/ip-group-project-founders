@@ -41,7 +41,7 @@ function open_cart() {
 					let cost = parseFloat(parent.find('.menu-item-cost').text());
 					console.log(cost);
 					parent.find('.menu-item-sum').text(quantity * cost + " $");
-					show_qr();
+					if($('#qr').attr('src') != '') show_qr();
 				});
 
 
@@ -64,7 +64,6 @@ function open_cart() {
 			$('html').animate({scrollTop: 0}, 400);
 		} else {
 			$('#menu').fadeOut();
-			$('#hidden-cart').show();
 			$('#hidden-cart').fadeIn();
 		}
 }
@@ -92,6 +91,13 @@ function show_qr() {
  } 
 
 $( document ).ready(function() {
+	$('#btn-back').click(function() {
+		$('#menu').fadeIn();
+		$('#hidden-cart').fadeOut();
+		$('#qr').attr('src', '');
+		$('#qr-instruction').hide();
+	});
+
 	$('.btn-add').click(function(){
 		let counter_id = this.previousElementSibling.name;
 		let $counter = $('input[name="' + counter_id + '"');
