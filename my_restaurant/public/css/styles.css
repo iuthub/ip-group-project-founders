@@ -19,29 +19,6 @@ body{
 
 }
 
-.forker{
-	margin-top: -50px;
-}
-.yep{
-	margin:50px auto;
-	background-color:#EAEDED;
-		}
-.yep h1{
-	text-align: center;
-	font-weight: bold;
-	color:#CD5C5C;
-	padding-bottom: 10px;
-	text-transform: uppercase;
-}
-.yep h1::after
-{
-	content:'';
-	display: block;
-	background: #CD5C5C;
-    height: 4px;
-    width:150;
-    margin:30px auto 4px;
-}
 .card{
 	background-color:#D5DBDB  ;
 }

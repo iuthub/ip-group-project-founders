@@ -4,7 +4,7 @@ $menu_link= route((Auth::check() && Auth::user()->is_admin)?'getAddMenu':'getMen
 ?>
 @section('content')
 @if(isset($reservation))
-<h1 style="margin-top: 100px">Hello, {{ $reservation->name}}. Your reservation was accepted!</h1>
+<div class="alert alert-success">Hello, {{ $reservation->name}}. Your reservation was accepted!</div>
 @endif
 <div >
   
