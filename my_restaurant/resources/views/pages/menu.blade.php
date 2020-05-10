@@ -22,9 +22,9 @@
 					<h5 class="menu-cost">{{$menu->cost}} $</h5>
 				</div>
 				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-secondary btn-sub">-</button>
+					<button type="button" class="btn btn-danger btn-sub">-</button>
 					<input type="text" name="{{$menu->id}}" style="text-align: center;" value="0">
-					<button type="button" class="btn btn-secondary btn-add">+</button>
+					<button type="button" class="btn btn-success btn-add">+</button>
 				</div>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 	</div>
 	<div class="btn-group row" style="width: 100%" role="group">
 		<button type="button" class="btn btn-secondary btn-order col-lg-6 col-6 col-sm-12" id="btn-back">Go Back</button>
-		<button type="button" class="btn btn-success btn-order col-lg-6 col-6 col-sm-12" id="btn-show-qr">Generate QR Order</button>
+		<button type="button" class="btn btn-secondary btn-order col-lg-6 col-6 col-sm-12" id="btn-show-qr">Generate QR Order</button>
 	</div>
 	<div class="qr">
 		<h2 id="qr-instruction">Show this QR code to the restaurant staff. They'll immediately process your order</h2>

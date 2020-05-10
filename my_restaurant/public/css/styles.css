@@ -142,12 +142,6 @@ div .nav-item .log_out{
 	bottom: 0px;
 }
 
-       /*FOR CREATE PAGE*/
-.form-control{
-	border: 2px solid teal;
-
-}
-
 .navbar-brand{
 	margin-left: 8rem;
 	padding: 0;
@@ -379,8 +373,8 @@ hr{
 	margin-top: 20px;
 	margin-bottom: 30px;
 	text-align: center;
-
-.carousel-item{
+}
+.carousel-item {
 	background-size: cover;
 }
 .carousel {
@@ -533,4 +527,72 @@ div.carusel3{
 	height: 850px;
 	background-size: cover;
 	margin-top: 0; 
+}
+
+.reservation-list {
+	text-align: center;
+}
+
+#reservations {
+margin: 0;
+padding: 0;
+}
+
+.good{
+  font-weight: 400;
+  letter-spacing: 1px;
+  color:#fff;
+  background: url("../images/7.jpg") no-repeat;
+  background-size: cover;
+  width:100%;
+  height:130vh;
+  padding-top: 5px;
+  }
+ .excellent {
+  background-color:rgba(44, 62, 80 , 0.8);
+  margin:150px ;
+  display: grid;
+  grid-template-columns: 40%  60%;
+}
+.container-time{
+background-color: rgba(0,0,0, 0.95);
+margin-left:-15px;
+padding:50px;
+outline:2px dotted #CD5C5C;
+outline-offset: -20px;
+text-align: center;
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #16A085  ;
+}
+.heading-day{
+color:#CD5C5C;
+font-size: 30px;
+font-family:'Great Vibes', cursive;
+}
+.heading-phone{
+  font-size: 20px;
+}
+.container-form{
+  padding: 20px 0;
+  margin:0 auto;
+  color: #000;
+}
+.form-reservation{
+  display: grid;
+  grid-row-gap:20px;
+}
+.form-field{
+  display: flex;
+  justify-content: space-between;
+}
+.form-reservation p{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container-time p{
+  color:#E9F7EF ;
 }

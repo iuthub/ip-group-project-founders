@@ -8,6 +8,7 @@ use App\Reservation;
 use Illuminate\Support\Facades\Auth;
 use App\Menu;
 use App\Category;
+use Illuminate\Support\Facades\Validator;
 
 class RestaurantController extends Controller
 {
@@ -36,7 +37,14 @@ class RestaurantController extends Controller
 
     public function postReservation(Request $req)
     {
-        //TODO: need to implement validation for email and name either in frontend or here
+         Validator::make($req->all(), [
+            'email'=>['required', 'string', 'email', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
+            'date' => 'required',
+            'time' => 'required',
+            'people_count' => 'required'
+         ]);
+         
         $date = Carbon::createFromFormat('Y-m-d', $req->input('date'));
         $time = Carbon::createFromFormat('g:ia', $req->input('time'));
         $reservation = new Reservation([
