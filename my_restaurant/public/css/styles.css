@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 *{
 	margin:0;
 	padding: 0;
@@ -60,6 +60,7 @@ letter-spacing: 2px;
 	font-family: 'Pacifico', cursive;
 	color:#F1C40F ;
 }
+
 /*********Css for register and login page*******/
 .easy{
 	background: url("../images/6.jpg") no-repeat;
@@ -88,7 +89,6 @@ div .nav-item .log_out{
 	border: 0;
 	margin-right: 0;
 }
-
 
   /*FOR MENU PAGE*/
   .class{
