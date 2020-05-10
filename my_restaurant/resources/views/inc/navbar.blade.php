@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top " >
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
 
 
     
@@ -29,10 +29,16 @@
                     <a class="nav-link" href="{{ route('getAbout') }}">About</a>
                 </li>
             </ul>
-
     </div>
-
-    <div class="navbar-collapse w-100 order-3"  >
+    <div class="navbar-collapse w-100 order-3">
+        @if(Route::currentRouteName() == 'getMenu')
+            <a id="cart" class="nav-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-quantity">  0  </span>
+            </a>
+        @endif
+    </div>
+    <div class="navbar-collapse w-100 order-4">
             <ul class="navbar-nav ml-auto">
 
                 @if(!Auth::check())

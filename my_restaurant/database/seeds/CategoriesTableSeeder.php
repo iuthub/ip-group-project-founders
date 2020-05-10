@@ -12,16 +12,16 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $category = new Category(['kind' => 'Salad']);
+        $category = new Category(['kind' => 'Salads']);
         $category->save();
 
-        $category = new Category(['kind' => 'Main Dish']);
+        $category = new Category(['kind' => 'Main Dishes']);
         $category->save();
 
-        $category = new Category(['kind' => 'Desert']);
+        $category = new Category(['kind' => 'Deserts']);
         $category->save();
 
-        $category = new Category(['kind' => 'Beverage']);
+        $category = new Category(['kind' => 'Beverages']);
         $category->save();
     }
 }

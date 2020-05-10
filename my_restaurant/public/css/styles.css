@@ -104,9 +104,7 @@ div .nav-item .log_out{
 	border-radius: 20%;
 }
 
-.btn-group button{
-	margin-left: 45px;
-}
+
 .cost{
 	background-color: teal;
 	margin-left: 45px;
@@ -273,6 +271,114 @@ div.fancy-background{
     opacity: 0.9;
 }
 
+.menu-item {
+	margin-bottom: 30px;
+}
+
+.btn-menu-delete {
+	width: 100%;
+	height: 100%;
+}
+.category-title-menu {
+	text-align: center;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 60px;
+	color: #bd8c55;
+	font-weight: bold;
+}
+
+.btn-menu-add {
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.menu-item-title {
+	color: #bd8c55;
+}
+
+#hidden-cart {
+	display: none;
+}
+
+
+#alert {
+	display: none;
+}
+
+#cart {
+	cursor: pointer;
+}
+
+#cart-content {
+	margin-top: 45px;
+}
+
+#cart-content input[type='number'] {
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#cart-content img {
+	width: 150px;
+	border-radius: 15%;
+}
+
+.cart-element {
+	background: #edeff2;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+
+hr{
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #bd8c55;
+}
+
+.fixed-bottom-button {
+	width: 60px;
+	height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    color: white;
+}
+
+.fixed-bottom-button:hover {
+	color: gold;
+}
+
+#qr-instruction {
+	display: none;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.btn-order {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 24px;
+}
+
+#hidden-cart .btn-group {
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+.qr {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
 
 .carousel-item{
 	background-size: cover;
@@ -427,5 +533,4 @@ div.carusel3{
 	height: 850px;
 	background-size: cover;
 	margin-top: 0; 
-	
 }
