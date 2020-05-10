@@ -21,7 +21,6 @@
 					<p class="card-text">{{$menu->body}}</p>
 					<h5>{{$menu->cost}} $</h5>
 				</div>
-				<hr>
 				<div class="btn-group" role="group">
 					<a href="{{ route('editMenu', ['id'=> $menu->id]) }}" style="padding-top: 13px;padding-bottom: 13px" class="btn btn-dark">Edit</a>
 					{!! Form::open(['action'=>['MenusController@destroy', $menu->id], 'method'=>'POST','class'=>'btn btn-dark', 'style'=>'padding:0']) !!}
