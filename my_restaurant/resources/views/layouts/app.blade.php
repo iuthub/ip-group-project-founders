@@ -16,6 +16,7 @@
         <script src="https://kit.fontawesome.com/94f2406347.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--  Google fonts -->
+       <link href="https://fonts.googleapis.com/css?family=DM+Mono|Lobster+Two&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <!--   For bootstrap -->
